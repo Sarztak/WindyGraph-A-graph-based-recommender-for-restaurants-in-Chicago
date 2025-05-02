@@ -1,0 +1,1937 @@
+{
+  "businesses": [
+    {
+      "id": "qjnpkS8yZO8xcyEIy5OU9A",
+      "alias": "girl-and-the-goat-chicago",
+      "name": "Girl & The Goat",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ya6gjD4BPlxe7AKMj_5WsA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/girl-and-the-goat-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 10418,
+      "categories": [
+        {
+          "alias": "newamerican",
+          "title": "New American"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        }
+      ],
+      "rating": 4.4,
+      "coordinates": {
+        "latitude": 41.88419277030351,
+        "longitude": -87.64794613195826
+      },
+      "transactions": [
+        "delivery"
+      ],
+      "price": "$$$",
+      "location": {
+        "address1": "809 W Randolph",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60607",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "809 W Randolph",
+          "Chicago, IL 60607"
+        ]
+      },
+      "phone": "+13124926262",
+      "display_phone": "(312) 492-6262",
+      "distance": 3395.1201600119675,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2300",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1400",
+              "day": 6
+            },
+            {
+              "is_overnight": false,
+              "start": "1630",
+              "end": "2200",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.girlandthegoat.com/chicago/menu",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "boE4Ahsssqic7o5wQLI04w",
+      "alias": "the-purple-pig-chicago",
+      "name": "The Purple Pig",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rHHvhRF8QPjee5B7c54jzw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-purple-pig-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 8781,
+      "categories": [
+        {
+          "alias": "tapasmallplates",
+          "title": "Tapas/Small Plates"
+        },
+        {
+          "alias": "mediterranean",
+          "title": "Mediterranean"
+        },
+        {
+          "alias": "newamerican",
+          "title": "New American"
+        }
+      ],
+      "rating": 4.3,
+      "coordinates": {
+        "latitude": 41.890694,
+        "longitude": -87.624782
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$$",
+      "location": {
+        "address1": "444 N Michigan Ave",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60611",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "444 N Michigan Ave",
+          "Chicago, IL 60611"
+        ]
+      },
+      "phone": "+13124641744",
+      "display_phone": "(312) 464-1744",
+      "distance": 4670.876906589787,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2200",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2200",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2200",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://thepurplepigchicago.com/eat",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "DXwSYgiXqIVNdO9dazel6w",
+      "alias": "pequods-pizza-chicago-3",
+      "name": "Pequod's Pizza",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/8QJUNblfCI0EDhOjuIWJ4A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pequods-pizza-chicago-3?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 8586,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "rating": 3.9,
+      "coordinates": {
+        "latitude": 41.92187,
+        "longitude": -87.664486
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "2207 N Clybourn Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60614",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "2207 N Clybourn Ave",
+          "Chicago, IL 60614"
+        ]
+      },
+      "phone": "+17733271512",
+      "display_phone": "(773) 327-1512",
+      "distance": 2158.7084581522413,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0200",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "0000",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "http://pequodspizza.com/chicago/menu/",
+        "open24_hours": false,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "CBF6sSJBD2iOmkbNZAerZQ",
+      "alias": "this-little-goat-chicago",
+      "name": "This Little Goat",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wkuC3jIXnPe5-4sAcduKVg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/this-little-goat-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "tacos",
+          "title": "Tacos"
+        }
+      ],
+      "rating": 3.8,
+      "coordinates": {
+        "latitude": 41.88070417685551,
+        "longitude": -87.67417994864469
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1901 W Madison St",
+        "address2": "",
+        "address3": "United Center.",
+        "city": "Chicago",
+        "zip_code": "60612",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "1901 W Madison St",
+          "United Center.",
+          "Chicago, IL 60612"
+        ]
+      },
+      "phone": "+13124554444",
+      "display_phone": "(312) 455-4444",
+      "distance": 2735.4201557314045,
+      "business_hours": [],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "db7p4tMxC_pptYho8RUhzQ",
+      "alias": "aloha-wagon-chicago",
+      "name": "Aloha Wagon",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/5DJYjSsrQuhpKKFsfuH84g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/aloha-wagon-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 276,
+      "categories": [
+        {
+          "alias": "filipino",
+          "title": "Filipino"
+        },
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "hawaiian",
+          "title": "Hawaiian"
+        }
+      ],
+      "rating": 4.8,
+      "coordinates": {
+        "latitude": 41.85405076353342,
+        "longitude": -87.68549001270712
+      },
+      "transactions": [
+        "delivery"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "2023 S Western Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60608",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "2023 S Western Ave",
+          "Chicago, IL 60608"
+        ]
+      },
+      "phone": "+13128889613",
+      "display_phone": "(312) 888-9613",
+      "distance": 5718.873631652097,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1800",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1800",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1800",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1800",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1800",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1500",
+              "day": 5
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.alohawagon.com/menu",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "XkhxVTNUb098Gpv5qNKZBA",
+      "alias": "kababish-bbq-and-grill-chicago",
+      "name": "Kababish - BBQ & Grill",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nm-D7ONXxFSUKoogy4_w7w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/kababish-bbq-and-grill-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 98,
+      "categories": [
+        {
+          "alias": "indpak",
+          "title": "Indian"
+        },
+        {
+          "alias": "pakistani",
+          "title": "Pakistani"
+        },
+        {
+          "alias": "bbq",
+          "title": "Barbeque"
+        }
+      ],
+      "rating": 4.6,
+      "coordinates": {
+        "latitude": 41.91049,
+        "longitude": -87.6436
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "location": {
+        "address1": "1554 N Larrabee St",
+        "address2": "",
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60610",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "1554 N Larrabee St",
+          "Chicago, IL 60610"
+        ]
+      },
+      "phone": "+13122184443",
+      "display_phone": "(312) 218-4443",
+      "distance": 2885.529449120692,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 5
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0330",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "0IYXh7l_VppKw5y97FehoA",
+      "alias": "kasama-chicago",
+      "name": "Kasama",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/APJhh2bUtv_eUTh3GDtw_Q/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/kasama-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 1117,
+      "categories": [
+        {
+          "alias": "filipino",
+          "title": "Filipino"
+        },
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        },
+        {
+          "alias": "newamerican",
+          "title": "New American"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 41.899692,
+        "longitude": -87.6756
+      },
+      "transactions": [
+        "delivery"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1001 N Winchester Ave",
+        "address2": null,
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60622",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "1001 N Winchester Ave",
+          "Chicago, IL 60622"
+        ]
+      },
+      "phone": "+17736973790",
+      "display_phone": "(773) 697-3790",
+      "distance": 634.0696033009702,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "0900",
+              "end": "1500",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "0900",
+              "end": "1500",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "0900",
+              "end": "1500",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "0900",
+              "end": "1500",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "0900",
+              "end": "1500",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.kasamachicago.com/menus",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "t2nXebM7aqTj_qq6saZ89g",
+      "alias": "eataly-chicago-chicago-6",
+      "name": "Eataly Chicago",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-51tE5R_DODX6IBAOqkEeA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/eataly-chicago-chicago-6?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 4570,
+      "categories": [
+        {
+          "alias": "gourmet",
+          "title": "Specialty Food"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 3.9,
+      "coordinates": {
+        "latitude": 41.892335432963,
+        "longitude": -87.6262607945148
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "43 E Ohio St",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60611",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "43 E Ohio St",
+          "Chicago, IL 60611"
+        ]
+      },
+      "phone": "+13125218700",
+      "display_phone": "(312) 521-8700",
+      "distance": 4494.921888413769,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2200",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2200",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2200",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2200",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2300",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2300",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "0700",
+              "end": "2200",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "rp17Dfjdh7JR4GGZwj6nqg",
+      "alias": "portillos-hot-dogs-chicago-8",
+      "name": "Portillo's Hot Dogs",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/r2KUGzb-P9RuqapjY99_Nw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/portillos-hot-dogs-chicago-8?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 7137,
+      "categories": [
+        {
+          "alias": "hotdog",
+          "title": "Hot Dogs"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 3.9,
+      "coordinates": {
+        "latitude": 41.89352544660259,
+        "longitude": -87.63153863267911
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "100 W Ontario St",
+        "address2": "",
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60610",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "100 W Ontario St",
+          "Chicago, IL 60610"
+        ]
+      },
+      "phone": "+13125878910",
+      "display_phone": "(312) 587-8910",
+      "distance": 4038.673560459053,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 5
+            },
+            {
+              "is_overnight": true,
+              "start": "1000",
+              "end": "0100",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "zIXZtgiir9CVF-iZeeAvaQ",
+      "alias": "ramen-san-chicago",
+      "name": "RAMEN-SAN",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/4TSQCELv2FWXt7ks-HLTQQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ramen-san-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 3154,
+      "categories": [
+        {
+          "alias": "ramen",
+          "title": "Ramen"
+        }
+      ],
+      "rating": 3.9,
+      "coordinates": {
+        "latitude": 41.889798,
+        "longitude": -87.630293
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "59 W Hubbard St",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60654",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "59 W Hubbard St",
+          "Chicago, IL 60654"
+        ]
+      },
+      "phone": "+13123779950",
+      "display_phone": "(312) 377-9950",
+      "distance": 4284.319528793847,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2300",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2300",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2300",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2300",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0100",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0100",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1200",
+              "end": "2300",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.ramensan.com/river-north-menus/",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "xoi7Cw7FoknAx5p880RtWQ",
+      "alias": "au-cheval-chicago",
+      "name": "Au Cheval",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/td7RDAytLoNuPMlCQ6IuMw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/au-cheval-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 9232,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        },
+        {
+          "alias": "tradamerican",
+          "title": "American"
+        }
+      ],
+      "rating": 4.4,
+      "coordinates": {
+        "latitude": 41.88466,
+        "longitude": -87.647668
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "800 W Randolph St",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60607",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "800 W Randolph St",
+          "Chicago, IL 60607"
+        ]
+      },
+      "phone": "+13129294580",
+      "display_phone": "(312) 929-4580",
+      "distance": 3376.5984269738638,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2315",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1000",
+              "end": "2215",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.auchevaldiner.com/chicago/menus",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "ZhHonGY7XknrPjwtx2jg2A",
+      "alias": "khmai-chicago",
+      "name": "Khmai",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/wj5cBkghQVUwDINqCLeHBw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/khmai-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 52,
+      "categories": [
+        {
+          "alias": "cambodian",
+          "title": "Cambodian"
+        }
+      ],
+      "rating": 4.6,
+      "coordinates": {
+        "latitude": 42.00239984854286,
+        "longitude": -87.66098231077194
+      },
+      "transactions": [],
+      "location": {
+        "address1": "6580 N Sheridan Rd",
+        "address2": "",
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60626",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "6580 N Sheridan Rd",
+          "Chicago, IL 60626"
+        ]
+      },
+      "phone": "+13126267710",
+      "display_phone": "(312) 626-7710",
+      "distance": 10901.348558876618,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1600",
+              "end": "2100",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1600",
+              "end": "2100",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1600",
+              "end": "2100",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1600",
+              "end": "2100",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1600",
+              "end": "2100",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "ruWJerAc9VW23GvegYddnQ",
+      "alias": "gaijin-chicago",
+      "name": "Gaijin",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Uf8BGwoDAl8uFQHskAGFYA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/gaijin-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 744,
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        }
+      ],
+      "rating": 4.3,
+      "coordinates": {
+        "latitude": 41.88583,
+        "longitude": -87.65182
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "950 W Lake St",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60607",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "950 W Lake St",
+          "Chicago, IL 60607"
+        ]
+      },
+      "phone": "+13122651348",
+      "display_phone": "(312) 265-1348",
+      "distance": 3046.9340788529935,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1700",
+              "end": "2200",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1700",
+              "end": "2200",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1700",
+              "end": "2200",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1700",
+              "end": "2200",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1700",
+              "end": "2200",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2200",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2200",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://gaijinchicago.com/menu",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "0zaoza-WXpWaln3cjkExIw",
+      "alias": "meez-meals-chicago-4",
+      "name": "Meez Meals",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/_ZUCQFN6kY1YrPb3C4dxsA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/meez-meals-chicago-4?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 231,
+      "categories": [
+        {
+          "alias": "fooddeliveryservices",
+          "title": "Food Delivery Services"
+        }
+      ],
+      "rating": 4.8,
+      "coordinates": {
+        "latitude": 41.9707489013672,
+        "longitude": -87.6575012207031
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60640",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "Chicago, IL 60640"
+        ]
+      },
+      "phone": "+17739166339",
+      "display_phone": "(773) 916-6339",
+      "distance": 7346.3887168624,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 5
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.meezmeals.com/Home/Menu",
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "c6Mpi_TsS1iKrS1hyRsFxw",
+      "alias": "cafe-nova-chicago",
+      "name": "Cafe Nova",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/t2C795FPkzdk3o16IaXF8g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cafe-nova-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 65,
+      "categories": [
+        {
+          "alias": "srilankan",
+          "title": "Sri Lankan"
+        },
+        {
+          "alias": "indpak",
+          "title": "Indian"
+        }
+      ],
+      "rating": 4.7,
+      "coordinates": {
+        "latitude": 41.99926,
+        "longitude": -87.660308
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "6431 N Sheridan Rd",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60626",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "6431 N Sheridan Rd",
+          "Chicago, IL 60626"
+        ]
+      },
+      "phone": "+17736750736",
+      "display_phone": "(773) 675-0736",
+      "distance": 10560.966458669105,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": true
+      }
+    },
+    {
+      "id": "-8YFhjfzqX9OBqC3jbr5Jg",
+      "alias": "willies-n-waffles-chicago",
+      "name": "Willies 'n Waffles",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/bSPFOjX9FI2ZXoCIdbMbLg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/willies-n-waffles-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 55,
+      "categories": [
+        {
+          "alias": "waffles",
+          "title": "Waffles"
+        },
+        {
+          "alias": "chicken_wings",
+          "title": "Chicken Wings"
+        },
+        {
+          "alias": "burgers",
+          "title": "Burgers"
+        }
+      ],
+      "rating": 4.3,
+      "coordinates": {
+        "latitude": 41.94947864703971,
+        "longitude": -87.6498076
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "3706 N Halsted",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60613",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "3706 N Halsted",
+          "Chicago, IL 60613"
+        ]
+      },
+      "phone": "+17736829273",
+      "display_phone": "(773) 682-9273",
+      "distance": 5443.834130963679,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0200",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0200",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0200",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "1600",
+              "end": "0400",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "1100",
+              "end": "0400",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "0000",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.eatwillies.com/menu-2",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "8G8enRqkEkYE2kDvg4Lx5Q",
+      "alias": "sando-street-chicago",
+      "name": "Sando Street",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BFu7fa18zIItpxjFKAnkRA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/sando-street-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 61,
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        },
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 41.91019,
+        "longitude": -87.667407
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1547 N Ashland Ave",
+        "address2": null,
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60622",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "1547 N Ashland Ave",
+          "Chicago, IL 60622"
+        ]
+      },
+      "phone": "+17736986475",
+      "display_phone": "(773) 698-6475",
+      "distance": 1023.6014963364516,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1900",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1900",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1900",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1900",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "1900",
+              "day": 5
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": null,
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "Y8x1sFXtAal88ZZUXeCjvA",
+      "alias": "uptown-deli-chicago",
+      "name": "Uptown Deli",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/T2fMNlVMEROToYNNKS_r8A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/uptown-deli-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 27,
+      "categories": [
+        {
+          "alias": "convenience",
+          "title": "Convenience Stores"
+        },
+        {
+          "alias": "delis",
+          "title": "Delis"
+        },
+        {
+          "alias": "grocery",
+          "title": "Grocery"
+        }
+      ],
+      "rating": 4.9,
+      "coordinates": {
+        "latitude": 41.96905888568942,
+        "longitude": -87.65452966267749
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "location": {
+        "address1": "4759 N Sheridan Rd",
+        "address2": "",
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60640",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "4759 N Sheridan Rd",
+          "Chicago, IL 60640"
+        ]
+      },
+      "phone": "+17739441150",
+      "display_phone": "(773) 944-1150",
+      "distance": 7360.647473969557,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 5
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://www.uptowndelichicago.com/menu-2",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "EYjyi_lytYaM1Ty7-kNKSg",
+      "alias": "phodega-chicago",
+      "name": "Phodega",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/rDsx27fhZnZhjKPq8xV2wg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/phodega-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 341,
+      "categories": [
+        {
+          "alias": "vietnamese",
+          "title": "Vietnamese"
+        },
+        {
+          "alias": "hainan",
+          "title": "Hainan"
+        },
+        {
+          "alias": "noodles",
+          "title": "Noodles"
+        }
+      ],
+      "rating": 4.3,
+      "coordinates": {
+        "latitude": 41.90334127310094,
+        "longitude": -87.6758734
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$$",
+      "location": {
+        "address1": "1924 W Division St",
+        "address2": "",
+        "address3": null,
+        "city": "Chicago",
+        "zip_code": "60622",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "1924 W Division St",
+          "Chicago, IL 60622"
+        ]
+      },
+      "phone": "+17736878187",
+      "display_phone": "(773) 687-8187",
+      "distance": 255.67232133916767,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 0
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 1
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 2
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 3
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 4
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 5
+            },
+            {
+              "is_overnight": false,
+              "start": "1100",
+              "end": "2100",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": false
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "https://phodega.com/regular-menu",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    },
+    {
+      "id": "GIswPZXoc7dR8Z6XbIyOdw",
+      "alias": "chavas-tacos-el-original-chicago",
+      "name": "Chavas Tacos El Original",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/21fByUq6FzKXX7OK37NYOA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/chavas-tacos-el-original-chicago?adjust_creative=94VzXcOi4Xxaigws7Qf6UA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=94VzXcOi4Xxaigws7Qf6UA",
+      "review_count": 281,
+      "categories": [
+        {
+          "alias": "mexican",
+          "title": "Mexican"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "rating": 3.6,
+      "coordinates": {
+        "latitude": 41.890598,
+        "longitude": -87.685539
+      },
+      "transactions": [
+        "delivery",
+        "pickup"
+      ],
+      "price": "$",
+      "location": {
+        "address1": "2333 W Grand Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Chicago",
+        "zip_code": "60612",
+        "country": "US",
+        "state": "IL",
+        "display_address": [
+          "2333 W Grand Ave",
+          "Chicago, IL 60612"
+        ]
+      },
+      "phone": "+13122261129",
+      "display_phone": "(312) 226-1129",
+      "distance": 1742.2999566519234,
+      "business_hours": [
+        {
+          "open": [
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 0
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 1
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 2
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 3
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 4
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 5
+            },
+            {
+              "is_overnight": true,
+              "start": "0000",
+              "end": "0000",
+              "day": 6
+            }
+          ],
+          "hours_type": "REGULAR",
+          "is_open_now": true
+        }
+      ],
+      "attributes": {
+        "business_temp_closed": null,
+        "menu_url": "http://chavastacoseloriginal.com/?page_id=6",
+        "open24_hours": null,
+        "waitlist_reservation": null
+      }
+    }
+  ],
+  "total": 25400,
+  "region": {
+    "center": {
+      "longitude": -87.67776489257812,
+      "latitude": 41.90515925618311
+    }
+  }
+}
