@@ -1,7 +1,5 @@
 import json
-import re
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 
 def flatten_restaurant_reviews(json_data):
     """
@@ -20,11 +18,8 @@ def flatten_restaurant_reviews(json_data):
                 'rating': review['rating'],
                 'text': review['text'],
                 'time_created': review['time_created'],
-                'url': review['url'],
                 'user_id': review['user']['id'],
                 'user_name': review['user']['name'],
-                'user_profile_url': review['user']['profile_url'],
-                'user_image_url': review['user']['image_url']
             }
             flattened_data.append(flat_record)
     
@@ -32,23 +27,14 @@ def flatten_restaurant_reviews(json_data):
     df = pd.DataFrame(flattened_data)
     return df
 
-def create_restaurant_df(csv_path='restaurants.csv'):
-    df = pd.read_csv(csv_path)
-
-    df.transactions = df.transactions.apply(lambda x: re.findall('\w+', x))
-    transaction_types = set()
-    for lt in df.transactions:
-        if lt:
-            transaction_types = transaction_types | set(lt)
-
 
 if __name__ == "__main__":
-    with open(r'data\reviews.json', 'r') as f:
+    with open(r'data\reviews.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     # 2. Convert to DataFrame
     reviews_df = flatten_restaurant_reviews(data)
 
     # save the file
-    reviews_df.to_pickle('review.pickle')
+    reviews_df.to_pickle('data/review.pkl')
     print(reviews_df.head())
