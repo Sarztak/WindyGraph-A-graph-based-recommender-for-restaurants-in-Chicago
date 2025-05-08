@@ -29,12 +29,12 @@ def flatten_restaurant_reviews(json_data):
 
 
 if __name__ == "__main__":
-    with open(r'data\reviews.json', 'r', encoding='utf-8') as f:
+    with open(r'data/reviews.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     # 2. Convert to DataFrame
     reviews_df = flatten_restaurant_reviews(data)
 
     # save the file
-    reviews_df.to_pickle('data/review.pkl')
+    reviews_df.to_pickle('data/processed_review_data.pkl')
     print(reviews_df.head())
