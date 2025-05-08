@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 # Import our text preprocessor
 from text_preprocessing import TextPreprocessor
 
-class EnhancedReviewFeatureExtractor:
+class ReviewFeatureExtractor:
     def __init__(self, reviews_df):
         """Initialize with the flattened dataframe of reviews"""
         self.reviews_df = reviews_df

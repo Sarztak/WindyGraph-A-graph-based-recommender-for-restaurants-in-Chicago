@@ -1,5 +1,7 @@
 import json
+import re
 import pandas as pd
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 
 def flatten_restaurant_reviews(json_data):
     """
@@ -29,6 +31,15 @@ def flatten_restaurant_reviews(json_data):
     # Convert to DataFrame
     df = pd.DataFrame(flattened_data)
     return df
+
+def create_restaurant_df(csv_path='restaurants.csv'):
+    df = pd.read_csv(csv_path)
+
+    df.transactions = df.transactions.apply(lambda x: re.findall('\w+', x))
+    transaction_types = set()
+    for lt in df.transactions:
+        if lt:
+            transaction_types = transaction_types | set(lt)
 
 
 if __name__ == "__main__":
