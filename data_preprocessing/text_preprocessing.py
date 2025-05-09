@@ -1,5 +1,7 @@
 import re
 import nltk
+nltk.download('punkt_tab')
+nltk.download('vader_lexicon')
 import string
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer

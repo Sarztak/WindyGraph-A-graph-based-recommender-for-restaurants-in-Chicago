@@ -110,13 +110,45 @@ def process_restaurant_data(input_file, output_file):
     # Normalize log_review_count to [0,1]
     max_log_reviews = df_clean['log_review_count'].max()
 
-    norm_log_reviews = df_clean['log_review_count'] / max_log_reviews
-    df_clean['popularity_score'] = df_clean['normalized_rating'] * norm_log_reviews
+    df_clean['normalized_log_review_count'] = df_clean['log_review_count'] / max_log_reviews
+
+
+    '''
+
+    every feature in your model implicitly encodes assumptions about what matters to users. Being intentional about these choices - rather than just implementing what seems mathematically sound - leads to recommendations that feel more human and intuitive.
+    
+    Impact on Recommendations
+    what each version of popularity score would emphasize in recommendations:
+    Version 1 (Multiplication):
+    Would heavily favor established "institution" restaurants
+    New but promising places would be buried
+    Creates a "winner-takes-all" effect where a few restaurants dominate
+    Emphasizes consensus favorites
+
+    Version 2 (Weighted Average):
+    Gives more balanced recommendations
+    Allows newer places with good ratings to emerge faster
+    Creates more diverse recommendations
+    Better represents different types of popularity
+
+    The 0.7 weight on review count and 0.3 on rating is a sensible default because more reviews means more confidence in the rating
+
+    Ultimately, the best weights should be determined by how well they help your system make recommendations that users actually enjoy and act on. This might require some iteration once  the system running and can collect feedback.
+
+    '''
+
+    df_clean['popularity_score'] = (
+        0.7 * df_clean['normalized_log_review_count'] + 
+        0.3 * df_clean['normalized_rating']
+    )
+    # df_clean['popularity_score'] = df_clean['normalized_rating'] * df['norm_log_review_count']
 
 
     # Method 2: Alternative - Wilson score (simplified version)
     # This considers both rating and number of reviews statistically
     # Higher ratings with more reviews get higher scores
+    # Addresses the "new restaurant problem" by accounting for statistical confidence
+    
     df_clean['wilson_score'] = (
         (df_clean['rating'] * df_clean['review_count'] + 3.0 * 2) / 
         (df_clean['review_count'] + 2 * 2)

@@ -6,7 +6,17 @@ def create_graph(
         reviews_df, restaurant_categories_df, user_mapping, restaurant_mapping,
         category_mapping, topic_distribution
 ):
-    '''Construct Heterogenous Graph from Processed Data'''
+    '''Construct Heterogenous Graph from Processed Data
+        processed_restaurant_columns = [
+        'id', 'name', 'rating', 'review_count', 'latitude', 'longitude',
+       'categories_list', 'log_review_count', 'normalized_rating',
+       'popularity_score', 'wilson_score', 'normalized_wilson_score',
+       'normalized_latitude', 'normalized_longitude']
+
+       processed_reviews_columns = [
+       'restaurant_id', 'review_id', 'rating', 'text', 'time_created',
+       'user_id', 'user_name']
+    '''
 
     # Initialize HeteroData object
     data = HeteroData()

@@ -1,3 +1,5 @@
+import pandas as pd
+
 def main():
     print("Hello from windygraph-a-graph-based-recommender-for-restaurants-in-chicago!")
 
@@ -16,7 +18,11 @@ if __name__ == "__main__":
     restaurant_to_id = loaded_results['restaurant_to_id']  # Dictionary
     unique_categories = loaded_results['unique_categories']  # List or dict
 
-    print(df_clean.head())  # Check the DataFrame
-    print(df_clean.columns)
-    print(category_to_id)   # Check the dictionary
+    # print(df_clean.head())  # Check the DataFrame
+    # print(df_clean.columns)
+    # print(category_to_id)   # Check the dictionary
+
+    reviews_df = pd.read_pickle('data/processed_review_data.pkl')
+
+    print(reviews_df.head().T)
 
