@@ -18,5 +18,5 @@ if __name__ == "__main__":
 
     print(df_clean.head())  # Check the DataFrame
     print(df_clean.columns)
-    # print(category_to_id)   # Check the dictionary
+    print(category_to_id)   # Check the dictionary
 

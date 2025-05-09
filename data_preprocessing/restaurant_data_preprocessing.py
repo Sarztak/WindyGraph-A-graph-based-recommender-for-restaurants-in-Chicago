@@ -3,6 +3,7 @@ import numpy as np
 import json
 import pickle
 import os
+import math
 from ast import literal_eval
 
 # Function to safely convert string representation of categories to list
@@ -20,6 +21,25 @@ def parse_categories(categories_str):
             return []
     except:
         return []
+# Using a simple projection centered on Chicago
+
+
+def local_projection(lat, lon):
+    chicago_center_lat, chicago_center_lon = 41.8781, -87.6298
+    # Constants for converting degrees to approximate kilometers at Chicago's latitude
+    lat_km = 111.0  # 1 degree latitude ≈ 111 km
+    lon_km = 111.0 * math.cos(math.radians(chicago_center_lat))  # Longitude scale factor
+    
+    # Calculate distance from center in kilometers
+    x = (lon - chicago_center_lon) * lon_km
+    y = (lat - chicago_center_lat) * lat_km
+    
+    # Normalize to [-1, 1] based on city boundaries (adjust constants as needed)
+    max_dist = 40  # ~40km covers most of Chicago
+    x_norm = (x / max_dist) * 0.5
+    y_norm = (y / max_dist) * 0.5
+    
+    return x_norm, y_norm
 
 def process_restaurant_data(input_file, output_file):
     """
@@ -115,7 +135,15 @@ def process_restaurant_data(input_file, output_file):
         'coordinates.latitude': 'latitude',
         'coordinates.longitude': 'longitude'
     }, inplace=True)
-    
+
+    df_clean['lat_lon_projection'] = df_clean.apply(lambda x: local_projection(x['latitude'], x['longitude']), axis=1)
+
+    df_clean['normalized_latitude'] = df_clean.apply(lambda x: x['lat_lon_projection'][0], axis=1)
+
+    df_clean['normalized_longitude'] = df_clean.apply(lambda x: x['lat_lon_projection'][1], axis=1)
+
+    df_clean.drop(columns='lat_lon_projection', inplace=True)
+
     # Create a unique list of all categories
     all_categories = []
     for cats in df_clean['categories_list']:
@@ -161,4 +189,4 @@ if __name__ == "__main__":
     
     # Display first few rows of processed data
     print("\nSample of processed data:")
-    print(result['restaurants'][['id', 'name', 'categories_list', 'rating']].head())
+    print(result['restaurants'][['id', 'name', 'categories_list', 'rating', 'normalized_latitude']].head())
