@@ -63,51 +63,58 @@ def process_restaurant_data(input_file, output_file):
     print(f"Data shape after dropping rows with missing essential info: {df_clean.shape}")
     
     # Fill missing values for non-essential columns
-    if 'rating' in df_clean.columns:
-        df_clean['rating'].fillna(0, inplace=True)
-    if 'review_count' in df_clean.columns:
-        df_clean['review_count'].fillna(0, inplace=True)
+    # Do not recommend filling with zeros; fortunately there are not missing values
+    # if 'rating' in df_clean.columns:
+    #     df_clean['rating'].fillna(0, inplace=True)
+    # if 'review_count' in df_clean.columns:
+    #     df_clean['review_count'].fillna(0, inplace=True)
     
     # Process categories
     df_clean['categories_list'] = df_clean['categories'].apply(parse_categories)
     
     # Log transform review count (handle zeros)
-    if 'review_count' in df_clean.columns:
-        df_clean['log_review_count'] = np.log1p(df_clean['review_count'])
+    df_clean['log_review_count'] = np.log1p(df_clean['review_count'])
     
     # Normalize ratings to [0,1] range
-    if 'rating' in df_clean.columns:
-        # Assuming Yelp ratings are on a 1-5 scale
-        df_clean['normalized_rating'] = (df_clean['rating'] - 1) / 4  # Min-max normalization
-        # Alternative: Z-score normalization
-        # df_clean['normalized_rating'] = (df_clean['rating'] - df_clean['rating'].mean()) / df_clean['rating'].std()
+    min_rating = df_clean['rating'].min()
+    max_rating = df_clean['rating'].max()
+
+    # Min-max normalization
+    df_clean['normalized_rating'] = (df_clean['rating'] - min_rating) / max_rating  
+    
+    # Alternative: Z-score normalization
+    # df_clean['normalized_rating'] = (df_clean['rating'] - df_clean['rating'].mean()) / df_clean['rating'].std()
     
     # Create popularity feature combining rating and review count
-    if 'rating' in df_clean.columns and 'review_count' in df_clean.columns:
-        # Method 1: Simple multiplication of normalized values
-        if 'normalized_rating' in df_clean.columns and 'log_review_count' in df_clean.columns:
-            # Normalize log_review_count to [0,1]
-            max_log_reviews = df_clean['log_review_count'].max()
-            if max_log_reviews > 0:  # Avoid division by zero
-                norm_log_reviews = df_clean['log_review_count'] / max_log_reviews
-                df_clean['popularity_score'] = df_clean['normalized_rating'] * norm_log_reviews
-            else:
-                df_clean['popularity_score'] = df_clean['normalized_rating']
-        
-        # Method 2: Alternative - Wilson score (simplified version)
-        # This considers both rating and number of reviews statistically
-        # Higher ratings with more reviews get higher scores
-        df_clean['wilson_score'] = (
-            (df_clean['rating'] * df_clean['review_count'] + 3.0 * 2) / 
-            (df_clean['review_count'] + 2 * 2)
-        )
+
+    # Normalize log_review_count to [0,1]
+    max_log_reviews = df_clean['log_review_count'].max()
+
+    norm_log_reviews = df_clean['log_review_count'] / max_log_reviews
+    df_clean['popularity_score'] = df_clean['normalized_rating'] * norm_log_reviews
+
+
+    # Method 2: Alternative - Wilson score (simplified version)
+    # This considers both rating and number of reviews statistically
+    # Higher ratings with more reviews get higher scores
+    df_clean['wilson_score'] = (
+        (df_clean['rating'] * df_clean['review_count'] + 3.0 * 2) / 
+        (df_clean['review_count'] + 2 * 2)
+    )
+
+    # Normalize wilson score to [0,1] range
+    min_rating = df_clean['wilson_score'].min()
+    max_rating = df_clean['wilson_score'].max()
+
+    # Min-max normalization
+    df_clean['normalized_wilson_score'] = (df_clean['wilson_score'] - min_rating) / max_rating
     
     # Rename coordinate columns for clarity
-    if 'coordinates.latitude' in df_clean.columns and 'coordinates.longitude' in df_clean.columns:
-        df_clean.rename(columns={
-            'coordinates.latitude': 'latitude',
-            'coordinates.longitude': 'longitude'
-        }, inplace=True)
+
+    df_clean.rename(columns={
+        'coordinates.latitude': 'latitude',
+        'coordinates.longitude': 'longitude'
+    }, inplace=True)
     
     # Create a unique list of all categories
     all_categories = []
@@ -120,6 +127,9 @@ def process_restaurant_data(input_file, output_file):
     # Create mapping dictionaries for categories and restaurants
     category_to_id = {category: idx for idx, category in enumerate(unique_categories)}
     restaurant_to_id = {rest_id: idx for idx, rest_id in enumerate(df_clean['id'].unique())}
+    
+    # drop category column
+    df_clean.drop(columns='categories', inplace=True)
     
     # Create the final dataframe with processed data
     result = {
