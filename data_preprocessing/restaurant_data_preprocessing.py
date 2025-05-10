@@ -41,7 +41,7 @@ def local_projection(lat, lon):
     
     return x_norm, y_norm
 
-def process_restaurant_data(input_file, output_file):
+def process_restaurant_data(input_file):
     """
     Process restaurant data for GNN model
     
@@ -176,49 +176,52 @@ def process_restaurant_data(input_file, output_file):
 
     df_clean.drop(columns='lat_lon_projection', inplace=True)
 
-    # Create a unique list of all categories
-    all_categories = []
-    for cats in df_clean['categories_list']:
-        all_categories.extend(cats)
-    unique_categories = sorted(list(set(all_categories)))
+    # # Create a unique list of all categories
+    # all_categories = []
+    # for cats in df_clean['categories_list']:
+    #     all_categories.extend(cats)
+    # unique_categories = sorted(list(set(all_categories)))
     
-    print(f"Found {len(unique_categories)} unique categories")
+    # print(f"Found {len(unique_categories)} unique categories")
     
-    # Create mapping dictionaries for categories and restaurants
-    category_to_id = {category: idx for idx, category in enumerate(unique_categories)}
-    restaurant_to_id = {rest_id: idx for idx, rest_id in enumerate(df_clean['id'].unique())}
+    # # Create mapping dictionaries for categories and restaurants
+    # category_to_id = {category: idx for idx, category in enumerate(unique_categories)}
+    # restaurant_to_id = {rest_id: idx for idx, rest_id in enumerate(df_clean['id'].unique())}
     
     # drop category column
-    df_clean.drop(columns='categories', inplace=True)
+    # df_clean.drop(columns='categories', inplace=True)
     
-    # Create the final dataframe with processed data
-    result = {
-        'restaurants': df_clean,
-        'category_to_id': category_to_id,
-        'restaurant_to_id': restaurant_to_id,
-        'unique_categories': unique_categories
-    }
+    # # Create the final dataframe with processed data
+    # result = {
+    #     'restaurants': df_clean,
+    #     'category_to_id': category_to_id,
+    #     'restaurant_to_id': restaurant_to_id,
+    #     'unique_categories': unique_categories
+    # }
     
-    # Save the processed data
-    with open(output_file, 'wb') as f:
-        pickle.dump(result, f)
+    # # Save the processed data
+    # with open(output_file, 'wb') as f:
+    #     pickle.dump(result, f)
     
-    print(f"Processed data saved to {output_file}")
-    return result
+    # print(f"Processed data saved to {output_file}")
+    return df_clean
 
 if __name__ == "__main__":
     # Example usage
     input_file = "data/yelp_restaurant_data.csv"  # Replace with your input file
-    output_file = "data/processed_restaurant_data.pkl"
     
     # Process the data
-    result = process_restaurant_data(input_file, output_file)
+    restaurant_df = process_restaurant_data(input_file)
     
-    # Print summary statistics
-    print("\nSummary:")
-    print(f"Number of restaurants: {len(result['restaurants'])}")
-    print(f"Number of categories: {len(result['unique_categories'])}")
+    restaurant_df.to_csv('data/processed_restaurant_data.csv')
+    restaurant_df.to_pickle('data/processed_restaurant_data.pkl')
+
+    print(restaurant_df.columns)
+    # # Print summary statistics
+    # print("\nSummary:")
+    # print(f"Number of restaurants: {len(result['restaurants'])}")
+    # print(f"Number of categories: {len(result['unique_categories'])}")
     
-    # Display first few rows of processed data
-    print("\nSample of processed data:")
-    print(result['restaurants'][['id', 'name', 'categories_list', 'rating', 'normalized_latitude']].head())
+    # # Display first few rows of processed data
+    # print("\nSample of processed data:")
+    # print(result['restaurants'][['id', 'name', 'categories_list', 'rating', 'normalized_latitude']].head())
