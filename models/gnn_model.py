@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F 
 from torch_geometric.nn import HeteroConv, GATConv, SAGEConv
-from .link_predictor import LinkPredictor
+from link_predictor import LinkPredictor
 
 '''
 Do I need 
