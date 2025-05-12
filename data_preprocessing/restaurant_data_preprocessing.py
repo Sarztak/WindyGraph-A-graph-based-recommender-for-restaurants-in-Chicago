@@ -100,7 +100,7 @@ def process_restaurant_data(input_file):
     max_rating = df_clean['rating'].max()
 
     # Min-max normalization
-    df_clean['normalized_rating'] = (df_clean['rating'] - min_rating) / max_rating  
+    df_clean['normalized_rating_restaurants'] = (df_clean['rating'] - min_rating) / max_rating  
     
     # Alternative: Z-score normalization
     # df_clean['normalized_rating'] = (df_clean['rating'] - df_clean['rating'].mean()) / df_clean['rating'].std()
@@ -139,7 +139,7 @@ def process_restaurant_data(input_file):
 
     df_clean['popularity_score'] = (
         0.7 * df_clean['normalized_log_review_count'] + 
-        0.3 * df_clean['normalized_rating']
+        0.3 * df_clean['normalized_rating_restaurants']
     )
     # df_clean['popularity_score'] = df_clean['normalized_rating'] * df['norm_log_review_count']
 
