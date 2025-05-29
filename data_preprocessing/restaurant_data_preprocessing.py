@@ -1,8 +1,5 @@
 import pandas as pd
 import numpy as np
-import json
-import pickle
-import os
 import math
 from ast import literal_eval
 
@@ -84,10 +81,6 @@ def process_restaurant_data(input_file):
     
     # Fill missing values for non-essential columns
     # Do not recommend filling with zeros; fortunately there are not missing values
-    # if 'rating' in df_clean.columns:
-    #     df_clean['rating'].fillna(0, inplace=True)
-    # if 'review_count' in df_clean.columns:
-    #     df_clean['review_count'].fillna(0, inplace=True)
     
     # Process categories
     df_clean['categories_list'] = df_clean['categories'].apply(parse_categories)
@@ -101,11 +94,6 @@ def process_restaurant_data(input_file):
 
     # Min-max normalization
     df_clean['normalized_rating_restaurants'] = (df_clean['rating'] - min_rating) / max_rating  
-    
-    # Alternative: Z-score normalization
-    # df_clean['normalized_rating'] = (df_clean['rating'] - df_clean['rating'].mean()) / df_clean['rating'].std()
-    
-    # Create popularity feature combining rating and review count
 
     # Normalize log_review_count to [0,1]
     max_log_reviews = df_clean['log_review_count'].max()
@@ -114,7 +102,6 @@ def process_restaurant_data(input_file):
 
 
     '''
-
     every feature in your model implicitly encodes assumptions about what matters to users. Being intentional about these choices - rather than just implementing what seems mathematically sound - leads to recommendations that feel more human and intuitive.
     
     Impact on Recommendations
@@ -141,14 +128,13 @@ def process_restaurant_data(input_file):
         0.7 * df_clean['normalized_log_review_count'] + 
         0.3 * df_clean['normalized_rating_restaurants']
     )
-    # df_clean['popularity_score'] = df_clean['normalized_rating'] * df['norm_log_review_count']
 
-
-    # Method 2: Alternative - Wilson score (simplified version)
-    # This considers both rating and number of reviews statistically
-    # Higher ratings with more reviews get higher scores
-    # Addresses the "new restaurant problem" by accounting for statistical confidence
-    
+    """
+        Method 2: Alternative - Wilson score (simplified version)
+        This considers both rating and number of reviews statistically
+        Higher ratings with more reviews get higher scores
+        Addresses the "new restaurant problem" by accounting for statistical confidence
+    """
     df_clean['wilson_score'] = (
         (df_clean['rating'] * df_clean['review_count'] + 3.0 * 2) / 
         (df_clean['review_count'] + 2 * 2)
@@ -171,39 +157,9 @@ def process_restaurant_data(input_file):
     df_clean['lat_lon_projection'] = df_clean.apply(lambda x: local_projection(x['latitude'], x['longitude']), axis=1)
 
     df_clean['normalized_latitude'] = df_clean.apply(lambda x: x['lat_lon_projection'][0], axis=1)
-
     df_clean['normalized_longitude'] = df_clean.apply(lambda x: x['lat_lon_projection'][1], axis=1)
-
     df_clean.drop(columns='lat_lon_projection', inplace=True)
 
-    # # Create a unique list of all categories
-    # all_categories = []
-    # for cats in df_clean['categories_list']:
-    #     all_categories.extend(cats)
-    # unique_categories = sorted(list(set(all_categories)))
-    
-    # print(f"Found {len(unique_categories)} unique categories")
-    
-    # # Create mapping dictionaries for categories and restaurants
-    # category_to_id = {category: idx for idx, category in enumerate(unique_categories)}
-    # restaurant_to_id = {rest_id: idx for idx, rest_id in enumerate(df_clean['id'].unique())}
-    
-    # drop category column
-    # df_clean.drop(columns='categories', inplace=True)
-    
-    # # Create the final dataframe with processed data
-    # result = {
-    #     'restaurants': df_clean,
-    #     'category_to_id': category_to_id,
-    #     'restaurant_to_id': restaurant_to_id,
-    #     'unique_categories': unique_categories
-    # }
-    
-    # # Save the processed data
-    # with open(output_file, 'wb') as f:
-    #     pickle.dump(result, f)
-    
-    # print(f"Processed data saved to {output_file}")
     return df_clean
 
 if __name__ == "__main__":
@@ -217,11 +173,3 @@ if __name__ == "__main__":
     restaurant_df.to_pickle('data/processed_restaurant_data.pkl')
 
     print(restaurant_df.columns)
-    # # Print summary statistics
-    # print("\nSummary:")
-    # print(f"Number of restaurants: {len(result['restaurants'])}")
-    # print(f"Number of categories: {len(result['unique_categories'])}")
-    
-    # # Display first few rows of processed data
-    # print("\nSample of processed data:")
-    # print(result['restaurants'][['id', 'name', 'categories_list', 'rating', 'normalized_latitude']].head())

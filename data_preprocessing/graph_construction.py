@@ -27,7 +27,7 @@ REQUIRED_REVIEW_COLS = {
 
 REQUIRED_RESTAURANT_COLS = {
     'id', 'categories_list',
-    'normalized_rating', 'normalized_wilson_score',
+    'normalized_rating_restaurants', 'normalized_wilson_score',
     'normalized_latitude', 'normalized_longitude',
     'popularity_score', 'normalized_log_review_count',
 }
@@ -105,7 +105,7 @@ def create_graph(
             "Ensure preprocessing is consistent."
         )
         restaurant_features[idx] = [
-            float(row['normalized_rating'].iloc[0]),
+            float(row['normalized_rating_restaurants'].iloc[0]),
             float(row['normalized_wilson_score'].iloc[0]),
             float(row['normalized_latitude'].iloc[0]),
             float(row['normalized_longitude'].iloc[0]),
@@ -157,14 +157,14 @@ def create_graph(
                 continue
             rest_cat_edges.append([r_idx, category_to_id[c]])
 
-    assert rest_cat_edges, "No restaurant‑category edges created - check categories_list preprocessing."
+    assert rest_cat_edges, "No restaurant - category edges created - check categories_list preprocessing."
 
     rest_cat_edge_index = torch.tensor(rest_cat_edges, dtype=torch.long).t().contiguous()
     data[('restaurant', 'belongs_to', 'category')].edge_index = rest_cat_edge_index
     data[('category', 'has', 'restaurant')].edge_index = rest_cat_edge_index.flip(0)
 
     logger.info(
-        "Graph assembled – Users: %d | Restaurants: %d | Categories: %d | Review edges: %d | RC edges: %d",
+        "Graph assembled - Users: %d | Restaurants: %d | Categories: %d | Review edges: %d | RC edges: %d",
         len(user_to_id), len(restaurant_to_id), len(category_to_id),
         user_rest_edge_index.size(1), rest_cat_edge_index.size(1)
     )
@@ -201,7 +201,7 @@ def build_loaders(
 
     train_data, val_data, test_data = splitter(graph)
     logger.info(
-        "Edge split – train: %d | val: %d | test: %d",
+        "Edge split - train: %d | val: %d | test: %d",
         train_data[('user', 'reviews', 'restaurant')].edge_index.size(1),
         val_data[('user', 'reviews', 'restaurant')].edge_index.size(1),
         test_data[('user', 'reviews', 'restaurant')].edge_index.size(1),
