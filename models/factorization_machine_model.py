@@ -70,5 +70,4 @@ item_features = dataset.build_item_features(item_feature_tuples)
 model = LightFM(loss='bpr')  # or 'warp', 'logistic'
 model.fit(interaction_matrix, user_features=user_features, item_features=item_features, epochs=10, num_threads=4)
 
-# 8. Recommend top-k
-# let me know when you're ready for prediction + evaluation steps
+
